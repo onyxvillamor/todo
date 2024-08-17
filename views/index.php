@@ -24,20 +24,26 @@ include("../config/config.php");
 
 
             echo  '<div class="col mt-4">
-                    <div class="card" style="height: 180px;">
-                      <div class="card-body">
-                        <h5 class="card-title">'. $title . '</h5>
-                        <p class="card-text">
-                          '. $content .'
-                        </p>
+                  <div class="card" style="height: 180px;">
+                    <div class="card-body">
+                      <div class="card-title row">
+                        <h4 class="col">' . $title . '</h4>
+                        <div class="col text-end">
+                          <a class="fa-solid fa-pen text-primary"></a>
+                          <a class="fa-solid fa-check fs-5 text-success"></a>
+                        </div>
                       </div>
+                      <p class="card-text">
+                        ' . $content . '
+                      </p>
                     </div>
-                  </div>';
+                  </div>
+                </div>';
           }
         }
 
         ?>
-        
+
 
         <div class="col mt-4">
           <div class="card" style="height: 180px;">
