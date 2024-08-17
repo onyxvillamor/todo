@@ -10,7 +10,7 @@
                 </div>
                 Today
               </a>
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="../views/index.php">
                 <div class="sb-nav-link-icon">
                     <i class="fa-solid fa-note-sticky"></i>
                 </div>
