@@ -7,6 +7,8 @@ include("../config/config.php");
   <main>
 
     <?php include('includes/modal.php') ?>
+    <?php include('includes/update-modal.php') ?>
+
 
     <div class="container-fluid px-4">
       <h1 class="mt-4 fs-2">Sticky Wall</h1>
@@ -26,10 +28,12 @@ include("../config/config.php");
             echo  '<div class="col mt-4">
                   <div class="card" style="height: 180px;">
                     <div class="card-body">
-                      <div class="card-title row">
+                      <div class="card-title row d-flex justify-content-between">
                         <h4 class="col">' . $title . '</h4>
-                        <div class="col text-end">
-                          <a class="fa-solid fa-pen text-primary"></a>
+                        <div class="col d-flex justify-content-end">
+                          <button class="btn p-0 fa-solid fa-pen text-primary me-2 fs-6" data-bs-toggle="modal" data-bs-target="#updateModal">
+                          
+                          </button>
                           <a class="fa-solid fa-check fs-5 text-success"></a>
                         </div>
                       </div>
@@ -43,6 +47,8 @@ include("../config/config.php");
         }
 
         ?>
+
+      
 
 
         <div class="col mt-4">

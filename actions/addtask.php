@@ -8,10 +8,10 @@ $title = $_POST['title'];
 $content = $_POST['content'];
 $state = 0;
 
-$query = "INSERT INTO task (title, content, state) VALUES ('$title', '$content', '$state')";
-$result = mysqli_query($conn, $query);
+$query = $conn->prepare("INSERT INTO task (title, content, state) VALUES (?,?,?)");
+$query->bind_param("sss", $title, $content, $state);
 
-if($result){
+if($query->execute()){
     header('location: ../views/index.php');
 }
 
