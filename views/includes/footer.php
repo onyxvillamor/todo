@@ -18,6 +18,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/scripts.js"></script>
+    <script src="js/ajax.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"
       crossorigin="anonymous"
