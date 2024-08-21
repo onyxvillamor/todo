@@ -6,7 +6,7 @@
                  <h1 class="modal-title fs-5" id="exampleModalLabel">What to do for today?</h1>
                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
              </div>
-             <form action="../actions/addtask.php" method="post">
+             <form id="addTask">
                  <div class="modal-body">
                     <label for="title">Title</label>
                      <input type="text" class="form-control" id="title" name="title" required autocomplete="off">
