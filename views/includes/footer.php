@@ -18,6 +18,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/scripts.js"></script>
-    <script src="../actions/js/ajax.js"></script>
+    <!-- ajax content below -->
+    <script src="../actions/ajax/display.js"></script>
+    <script src="../actions/ajax/addtask.js"></script>
+    <script src="../actions/ajax/editcontent.js"></script>
   </body>
 </html>

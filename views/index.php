@@ -7,7 +7,7 @@ include("../config/config.php");
   <main>
 
     <?php include('includes/modal.php') ?>
-    <?php include('includes/update-modal.php') ?>
+    <?php include('includes/update-modal.php') ?> 
 
 
     <div class="container-fluid px-4">
@@ -16,8 +16,7 @@ include("../config/config.php");
         <i class="fa-solid fa-plus"></i>
       </button>
       <div class="row row-cols-3" id="tasks">
-
-
+      <!-- content goes here -->
       </div>
     </div>
   </main>

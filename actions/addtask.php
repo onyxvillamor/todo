@@ -2,7 +2,7 @@
 
 require "../config/config.php";
 
-if(isset($_POST['submit'])){
+if(isset($_POST['title']) && isset($_POST['content'])){
 
 $title = $_POST['title'];
 $content = $_POST['content'];
