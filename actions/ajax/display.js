@@ -1,4 +1,7 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', loadTasks);
+
+
+function loadTasks(){
     var xhr = new XMLHttpRequest();
     xhr.open('GET', '../actions/display.php', true);
 
@@ -33,4 +36,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     xhr.send();
-});
+}
