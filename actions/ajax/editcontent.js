@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
               console.log(this.responseText);
               location.reload(); 
           } else {
-              alert('Error updating task.');
+              console.log('Error updating task.');
           }
       };
 
