@@ -31,13 +31,13 @@ function loadTasks() {
                         <div class="card" style="height: 180px; background-color: ${randomItem};">
                             <div class="card-body">
                                 <div class="card-title row d-flex justify-content-between">
-                                    <h4 class="col" >${tasks[i].content}</h4>
+                                    <h4 class="col" >${tasks[i].title}</h4>
                                     <div class="col d-flex justify-content-end">
                                         <button class="btn p-0 fa-solid fa-pen text-dark me-2 fs-6"
                                                 data-bs-toggle="modal"
                                                 data-bs-target="#updateModal" title="Edit">
                                         </button>
-                                        <button class="btn fa-solid fa-check fs-5 text-dark" title="Done task" id="doneTask"></button>
+                                        <button class="btn p-0 fa-solid fa-check fs-5 text-dark" title="Done task" id="doneTask"></button>
                                     </div>
                                 </div>
                                 <p class="card-text">${tasks[i].content}</p>
@@ -53,3 +53,5 @@ function loadTasks() {
 
   xhr.send();
 }
+
+

@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       xhr.onload = function() {
           if (xhr.status >= 200 && xhr.status < 300) {
+            console.log(this.responseText);
               var task = JSON.parse(this.responseText);
               document.getElementById('updateTitle').value = task.title;
               document.getElementById('updateContent').value = task.content;
