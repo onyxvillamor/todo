@@ -9,5 +9,6 @@
     <script src="../actions/ajax/display.js"></script>
     <script src="../actions/ajax/addtask.js"></script>
     <script src="../actions/ajax/editcontent.js"></script>
+    <script src="../actions/ajax/showUpdateModal.js"></script>
   </body>
 </html>

@@ -5,7 +5,7 @@ if (isset($_POST['id'])) {
     $taskId = $_POST['id'];
 
     // Prepare SQL query to fetch task data
-    $query = $conn->prepare("SELECT title, content FROM task WHERE id = ?");
+    $query = $conn->prepare("SELECT id, title, content FROM task WHERE id = ?");
     $query->bind_param("i", $taskId);
 
     // Execute query and check for errors
